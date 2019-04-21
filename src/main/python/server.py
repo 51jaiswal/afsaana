@@ -13,6 +13,9 @@ def home():
 @app.route('/contact')
 def contact():
    return render_template("contact.html")
+@app.route('/shubham')
+def shubham():
+   return render_template("shubham.html")
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', debug=True, port=5000)
